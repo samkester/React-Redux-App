@@ -6,8 +6,9 @@ import * as serviceWorker from './serviceWorker';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
+import thunk from "redux-thunk";
 
-import reducer from "./reducers";
+import reducer from "./state/reducers";
 import theme from "./theme.js";
 
 const store = createStore(reducer, applyMiddleware(thunk));
