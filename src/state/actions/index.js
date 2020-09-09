@@ -10,11 +10,11 @@ export const getTexts = () => {
     
         axios.get("https://baconipsum.com/api/?type=meat-and-filler")
         .then(response => {
-            console.log(response);
+            //console.log(response);
             dispatch({type: GET_SUCCESS, data: response.data});
         })
         .catch(error => {
-            console.log(error)
+            //console.log(error)
             dispatch({type: GET_FAILURE, data: ["oh no an error"]});
         })
     }

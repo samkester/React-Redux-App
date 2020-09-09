@@ -11,10 +11,13 @@ function TextList({texts, getTexts}){
 
     return(
         <StyledTextList>
-            {texts?
+            <h1>BACON IPSUM</h1>
+            <div className="box">
+                {texts?
                 texts.map((item, index) => <Text key={index} item={item} />)
                 :
                 <div>Please wait, loading.</div>}
+            </div>
         </StyledTextList>
     )
 }
