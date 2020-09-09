@@ -2,7 +2,7 @@
 import {GET_FAILURE, GET_SUCCESS, GET_PENDING} from "../actions";
 
 const initialState = {
-    texts = ["Please wait while the application loads."],
+    texts: ["Please wait while the application loads."],
 }
 
 export default function(state = initialState, action) {
