@@ -8,10 +8,10 @@ export const getTexts = () => {
     return(dispatch) => { // invoke dispatch to send actions
         dispatch({type: GET_PENDING});
     
-        axios.get("api here")
+        axios.get("https://baconipsum.com/api/?type=meat-and-filler")
         .then(response => {
             console.log(response);
-            dispatch({type: GET_SUCCESS, data: ["success woo"]});
+            dispatch({type: GET_SUCCESS, data: response.data});
         })
         .catch(error => {
             console.log(error)
